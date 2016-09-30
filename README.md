@@ -11,6 +11,6 @@ from pybloom import ScalableBloomFilter</code></pre>
 ---
 ##TODO
 1.  Implement threading for url page parsing for both the hash table and bloom filter BFS implementations. 
-2.  Implement random Wikipedia page selection. This is currently not feasible because without threading, the implementation is simply too slow to run a BFS with more than 3 levels as the tree expands far too quickly. 
+2.  Implement random Wikipedia page selection. This is currently not feasible because without threading, the implementation is simply too slow to run a BFS with more than 3 levels as the tree expands far too quickly as the available processing power is limited. 
 3.  Gather data and compare runtime/spatial usage ratios between the hash table and bloom filter implementations. Usage ratios will be favored over absolute values because some data was collected prior to threading implementation. If there is significant deviation between the ratios--there shouldn't be--then data from the non-threaded implementation will be discarded. 
 4.  May implement option parser for the python script on command line. User may then pass in URLs as start and end points.
